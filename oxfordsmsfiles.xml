@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+        <name>OxfordSMSFiles</name>
+        <author>Ivan Komlev</author>
+        <authorEmail>ivankomlev@oxford.edu.pa</authorEmail>
+        <authorUrl>http://oxfordsms.com</authorUrl>
+	<license>GNU General Public License</license>
+        <copyright>Copyright (C) OxfordSMS.com. All rights reserved.</copyright>
+        <creationDate>September 2021</creationDate>
+        <version>1.0.1</version>
+        <description>OxfordSMS - Files</description>
+ 
+        <files folder="site">
+                <filename>index.html</filename>
+                <filename>oxfordsmsfiles.php</filename>
+                <filename>controller.php</filename>
+                <filename>router.php</filename>
+
+                <folder>includes</folder>
+                <folder>views</folder>
+                <folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+
+        </files>
+
+	<administration>
+        </administration>
+
+    	<scriptfile>script.php</scriptfile>
+
+	<languages folder="site/language">
+        	<language tag="en-GB" client="site">en-GB.com_oxfordsmsfiles.ini</language>
+        </languages>
+
+</extension>
