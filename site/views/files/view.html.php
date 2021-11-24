@@ -16,8 +16,12 @@ jimport('joomla.application.component.view');
  
     class OxfordSMSFilesViewFiles extends JViewLegacy
     {
-         function display($tpl = null) 
+        function display($tpl = null) 
         {
+			$document = JFactory::getDocument();
+			$document->addCustomTag('<script src="'.JURI::root(true).'/media/jui/js/jquery.min.js"></script>');
+
+				
             $a=JRequest::getCmd('layout');
             parent::display($tpl);
         }

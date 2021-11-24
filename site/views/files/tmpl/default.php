@@ -14,7 +14,7 @@ $app		= JFactory::getApplication();
 $params=$app->getParams();
 
 
-JHtml::_('jquery.framework',  true, true);
+//JHtml::_('jquery.framework',  true, true);
 
 require_once('helper.php');
 

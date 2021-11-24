@@ -32,7 +32,7 @@ var curBrowseDir = "<?php echo $sfl_dirlocation; ?>";
 
 jQuery(document).ready(function() {
 
-jQuery('#sfl_ARefresh').live('click', function() {
+jQuery('#div_sflcontent').on('click', '#sfl_ARefresh', function() {
 
 	var params = '&sflDir=' + curBrowseDir;
 	
@@ -57,8 +57,9 @@ jQuery('#sfl_ARefresh').live('click', function() {
 	return false;
 
 });
-
-jQuery('.sfl_btnBrowseDir').live('click', function() {
+//sfl_btnBrowseDir
+//sfl_item
+jQuery('#div_sflcontent').on('click', '.sfl_btnBrowseDir', function() {
 
 	var dir = this.rel;
 	
@@ -134,7 +135,8 @@ jQuery('.sfl_btnDelete').live('click', function() {
 });
 <?php } ?>
 
-jQuery('#sfl_ASortDesc').live('click', function() {
+//FIX IT!
+jQuery('#sfl_ASortDesc').on('click', '#sfl_ASortDesc', function() {
 	var params = '&sflSort=desc&sflDir=' + curBrowseDir;
 	
 	if (document.getElementById("sflSortDesc").className == "") return false;
@@ -164,7 +166,8 @@ jQuery('#sfl_ASortDesc').live('click', function() {
 	
 });
 
-jQuery('#sfl_ASortAsc').live('click', function() {
+//FIX IT
+jQuery('#sfl_ASortAsc').on('click', '#sfl_ASortAsc', function() {
 	var params = '&sflSort=asc&sflDir=' + curBrowseDir;
 	
 	if (document.getElementById("sflSortAsc").className == "") return false;
@@ -194,7 +197,8 @@ jQuery('#sfl_ASortAsc').live('click', function() {
 		
 });
 
-jQuery('#sfl_btnNext').live('click', function() {
+//FIX IT
+jQuery('#sfl_btnNext').on('click', '#sfl_btnNext', function() {
 
 	var nextVal = document.getElementById('sflNextVal').value;
 	var params = '&sflNext=' + nextVal + '&sflDir=' + curBrowseDir;
@@ -221,7 +225,8 @@ jQuery('#sfl_btnNext').live('click', function() {
 
 });
 
-jQuery('#sfl_btnPrev').live('click', function() {
+//Fix it
+jQuery('#sfl_btnPrev').on('click', '#sfl_btnPrev', function() {
 
 	var params = '';
 

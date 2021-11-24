@@ -166,6 +166,8 @@ class ModSimpleFileListerHelperv10
 //echo "sfl_setbasepath=$sfl_setbasepath<br/>";
 
 		$baseurl = ModSimpleFileListerHelperv10::getBaseURL($sfl_dirlocation, $sfl_setbasepath);
+		
+		//echo '<br>$baseurl='.$baseurl.'<br/>';
 
 		// Remove final slash to get dir. 
 		if ( substr( $sfl_dirlocation , strlen($sfl_dirlocation) - 1) === DIRECTORY_SEPARATOR )
@@ -209,9 +211,13 @@ class ModSimpleFileListerHelperv10
 $subdirlocation = $dirvals;
 // Remove initial slash if exist
 if (substr($subdirlocation, 0, 1) === "/") $subdirlocation = substr($subdirlocation, 1);
+
 // Add trainling slash
+/*
 if (substr($subdirlocation, strlen($subdirlocation) - 1) !== "/") $subdirlocation .= "/";
 $baseurl .= $subdirlocation;
+*/
+
 //$results .= "[$subdirlocation]";
 			/*
 $results .= "$baseurl .= $browsedir";
