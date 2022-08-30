@@ -17,7 +17,7 @@ $document->addCustomTag('<link href="/components/com_oxfordsmsfiles/css/mod_simp
 
 ?>
 
-<script language="javascript" type="text/javascript">
+<script>
 
 var curPageURL = window.location.href;
 if (curPageURL.indexOf(".php?") > 0) {
