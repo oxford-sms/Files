@@ -9,6 +9,8 @@
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
+
+use Joomla\CMS\Factory;
  
 // import joomla controller library
 jimport('joomla.application.component.controller');
@@ -16,7 +18,10 @@ jimport('joomla.application.component.controller');
 $controller = JControllerLegacy::getInstance('OxfordSMSFiles');
 
 // Perform the Request task
-$controller->execute(JRequest::getCmd('task'));
+$jinput = Factory::getApplication()->input;
+$task = $jinput->getCmd('task');
+
+$controller->execute($task);
  
 // Redirect if set by the controller
 $controller->redirect();
