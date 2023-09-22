@@ -13,9 +13,5 @@ defined('_JEXEC') or die('Restricted access');
 $app		= JFactory::getApplication();
 $params=$app->getParams();
 
-
-//JHtml::_('jquery.framework',  true, true);
-
 require_once('helper.php');
-
 include('mod_simplefilelisterv1.0.php');

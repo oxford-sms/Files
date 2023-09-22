@@ -15,4 +15,5 @@ jimport('joomla.application.component.controller');
 
     class OxfordSMSFilesController extends JControllerLegacy
     {
+
     }

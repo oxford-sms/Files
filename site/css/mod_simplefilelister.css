@@ -1,18 +1,22 @@
 .sfl_content {
 	position: relative;
 	padding-bottom: 4px;
-	padding-left: 2px;
+	padding-left: 10px;
 	padding-right: 2px;
 	padding-top: 4px;
 }
 
 .sfl_item {
 	position: relative;
-	left: -10px;
+/*	left: -10px;*/
 	padding-bottom: 4px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 4px;
+}
+
+.sfl_item img{
+margin-right:10px;
 }
 
 .sfl_shadow {

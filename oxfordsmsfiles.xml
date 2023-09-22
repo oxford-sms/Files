@@ -3,11 +3,11 @@
         <name>OxfordSMSFiles</name>
         <author>Ivan Komlev</author>
         <authorEmail>ivankomlev@oxford.edu.pa</authorEmail>
-        <authorUrl>http://oxfordsms.com</authorUrl>
+        <authorUrl>https://oxfordsms.com</authorUrl>
 	<license>GNU General Public License</license>
         <copyright>Copyright (C) OxfordSMS.com. All rights reserved.</copyright>
-        <creationDate>September 2021</creationDate>
-        <version>1.0.1</version>
+        <creationDate>September 2023</creationDate>
+        <version>1.0.2</version>
         <description>OxfordSMS - Files</description>
  
         <files folder="site">
