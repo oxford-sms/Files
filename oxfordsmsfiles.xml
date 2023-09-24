@@ -30,7 +30,19 @@
     	<scriptfile>script.php</scriptfile>
 
 	<languages folder="site/language">
-        	<language tag="en-GB" client="site">en-GB.com_oxfordsmsfiles.ini</language>
+        	<language tag="cs-CZ" client="site">cs-CZ.com_oxfordsmsfiles.ini</language>
+        	<language tag="de-DE" client="site">de-DE.com_oxfordsmsfiles.ini</language>
+        	<language tag="de-LU" client="site">de-LU.com_oxfordsmsfiles.ini</language>
+        	<language tag="el-GR" client="site">el-GR.com_oxfordsmsfiles.ini</language>
+            <language tag="en-GB" client="site">en-GB.com_oxfordsmsfiles.ini</language>
+            <language tag="es-ES" client="site">es-ES.com_oxfordsmsfiles.ini</language>
+        	<language tag="fr-FR" client="site">fr-FR..com_oxfordsmsfiles.ini</language>
+        	<language tag="it-IT" client="site">it-IT.com_oxfordsmsfiles.ini</language>
+        	<language tag="nl-NL" client="site">nl-NL.com_oxfordsmsfiles.ini</language>
+        	<language tag="pt-BR" client="site">pt-BR.com_oxfordsmsfiles.ini</language>
+            <language tag="ru-RU" client="site">ru-RU.com_oxfordsmsfiles.ini</language>
+            <language tag="sk-SK" client="site">sk-SK.com_oxfordsmsfiles.ini</language>
+            <language tag="sl-SI" client="site">sl-SI.com_oxfordsmsfiles.ini</language>
+            <language tag="uk-UA" client="site">uk-UA.com_oxfordsmsfiles.ini</language>
         </languages>
-
 </extension>
