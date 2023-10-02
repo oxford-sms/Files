@@ -496,19 +496,25 @@ $results .= "$baseurl .= $browsedir";
                 // Fix Windows path...
                 $baseurl .= str_replace("\\", "", $serverurl);
             } else {
+
+//                echo '$dirlocation:'.$dirlocation.'*<br>';
+/*
                 if ((substr($dirlocation, 1, 2) === ":\\") || (substr($dirlocation, 0, 1) === "/")) {
                     // Server root path
                     $baseurl = "file://" . str_replace("\\", "/", $dirlocation);
                 } else {
-
+*/
                     $serverurl = str_replace("\\", "/", $_SERVER["DOCUMENT_ROOT"]);
 
                     $baseurl = str_replace("\\", "/", $dirlocation);
 
                     $baseurl = str_replace($serverurl, "", $baseurl);
                     //$baseurl = dirname($_SERVER["HTTP_REFERER"])."/".$baseurl;
-                    $baseurl = $protocol . $_SERVER["HTTP_HOST"] . $folder . "/" . $baseurl;
-                }
+                    if($baseurl[0] == '/')
+                        $baseurl = $protocol . $_SERVER["HTTP_HOST"] . $folder . $baseurl;
+                    else
+                        $baseurl = $protocol . $_SERVER["HTTP_HOST"] . $folder . "/" . $baseurl;
+//                }
             }
         } else {
             $baseurl = $sfl_basepath;
