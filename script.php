@@ -25,7 +25,7 @@ class com_OxfordSMSFilesInstallerScript
 		}
 		
 		require_once($loader_file);
-		CTLoader(true);
+		CustomTablesLoader(true);
 		
 		$smsfile=JPATH_SITE.DIRECTORY_SEPARATOR.'components'.DIRECTORY_SEPARATOR.'com_oxfordsms'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'components.php';
 
